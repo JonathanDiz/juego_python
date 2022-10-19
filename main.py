@@ -15,7 +15,7 @@ class Game:
 		self.level = Level()
 
 		# sound 
-		main_sound = pygame.mixer.Sound('./audio/main.ogg')
+		main_sound = pygame.mixer.Sound('./layout/audio/main.ogg')
 		main_sound.set_volume(0.5)
 		main_sound.play(loops = -1)
 	
@@ -36,7 +36,7 @@ class Game:
 
 	def intro_screen(self):
 		intro = True
-		ruta_intro_background = './graphics/start screen/beansjam_startscreen.png'
+		ruta_intro_background = './layout/graphics/start screen/beansjam_startscreen.png'
 		new_ancho = WIDTH / 2
 		new_alto = HEIGTH
 		imagen_original = pygame.image.load(ruta_intro_background)
@@ -62,7 +62,7 @@ class Game:
 
 def game_over(self):
 		game_over = True
-		ruta_game_over = './graphics/game over/game_over.png'
+		ruta_game_over = './layout/graphics/game over/game_over.png'
 		ancho = WIDTH
 		alto = HEIGTH
 		img_original = pygame.image.load(ruta_game_over)
